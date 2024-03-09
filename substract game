@@ -1,0 +1,28 @@
+#file name:CS12_A1_T2_3_20230431.py
+#Purpose:this is a two player mathematical game of strategy. it,s played by two players with coins  the player take turns removing a non zero square number the last one who remove the last coin wins
+#Author:مؤمن دسوقي محمود همام 
+#ID:20230431
+num_coins=int(input("Enter the number of coin:")) #Start the game by inputting the number of coins in the pile
+base_coin = num_coins #Set a variable base_coin to the initial number of coins
+#player one
+while(num_coins>0): #Loop while there are still coins in the pile
+    move1=int(input("player1 take move")) #Prompt Player 1 to take a move
+    while (move1 ** 0.5)% 1!=0 or move1==0 or move1>num_coins: #Ensure the square root of the move is an integer 
+        move1=int(input("player1 please take a valid move")) #Validate Player 1's move
+    num_coins=num_coins-move1 #Subtract Player 1's move from the number of coins in the pile
+    if num_coins ==0:
+        if move1 == base_coin:
+            print("player1 win by cheating")
+            break 
+        print("player1 win")
+        break #If there are no coins left, Player 1 wins; end the game.
+    print(num_coins)
+
+    move2=int(input("player2 please take a move")) #Prompt Player 2 to take a move
+    while (move2**0.5)% 1!=0 or move2>num_coins or move2==0: #Ensure the square root of the move is an integer
+        move2=int(input("player2 please take a valid move")) #Validate Player 2's move
+    num_coins=num_coins-move2 #Subtract Player 2's move from the number of coins in the pile
+    print(num_coins)
+    if num_coins ==0:
+        print("player2 win") #If there are no coins left, Player 2 wins; end the game.
+        break
