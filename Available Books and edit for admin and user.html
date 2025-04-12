@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Books</title>
+    <link rel="stylesheet" href="CSS/Available Books and edit for admin and user.css">
+</head>
+<body>
+<h2>Admin - Book List</h2>
+<table border="3">
+  <tr>
+    <th>ID</th>
+    <th>Book Name</th>
+    <th>Author</th>
+    <th>Category</th>
+    <th>Description</th>
+    <th>Action</th>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td>Clean Code</td>
+    <td>Robert C. Martin</td>
+    <td>Programming</td>
+    <td>A guide to writing clean, maintainable code</td>
+    <td><a href="edit-book.html?id=101">Edit</a></td>
+  </tr>
+  <tr>
+    <td>102</td>
+    <td>The Alchemist</td>
+    <td>Paulo Coelho</td>
+    <td>Fiction</td>
+    <td>A mystical story about a shepherd's journey</td>
+    <td><a href="edit-book.html?id=102">Edit</a></td>
+  </tr>
+</table>
+<!-- Admin: Edit Book Page -->
+<h2>Edit Book</h2>
+<form action="/update-book" method="post">
+  <label for="bookID">Book ID:</label><br>
+  <input type="text" id="bookID" name="bookID" value="101" readonly><br><br>
+
+  <label for="bookName">Book Name:</label><br>
+  <input type="text" id="bookName" name="bookName" value="Clean Code"><br><br>
+
+  <label for="author">Author:</label><br>
+  <input type="text" id="author" name="author" value="Robert C. Martin"><br><br>
+
+  <label for="category">Category:</label><br>
+  <input type="text" id="category" name="category" value="Programming"><br><br>
+
+  <label for="description">Description:</label><br>
+  <textarea id="description" name="description">A guide to writing clean, maintainable code</textarea><br><br>
+
+  <input type="submit" value="Update Book">
+</form>
+<!-- User: View List of Available Books -->
+<h2>Available Books</h2>
+<table border="1">
+  <tr>
+    <th>Book Name</th>
+    <th>Author</th>
+    <th>Category</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>Clean Code</td>
+    <td>Robert C. Martin</td>
+    <td>Programming</td>
+    <td>Available</td>
+  </tr>
+  <tr>
+    <td>The Alchemist</td>
+    <td>Paulo Coelho</td>
+    <td>Fiction</td>
+    <td>Borrowed</td>
+  </tr>
+</table>
+
+</body>
+</html>

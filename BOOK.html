@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Book Haven - Borrow Books</title>
+    <link rel="stylesheet" href="CSS/Book.css">
+</head>
+<body>
+    <div class="container">
+
+
+        <main>
+            <section class="borrow-section">
+                <h2>Available Books</h2>
+                <div class="book-grid">
+                    <!-- Book 1 -->
+                    <div class="book-card">
+                        <h3 class="book-title">The Great Gatsby</h3>
+                        <p class="book-author">F. Scott Fitzgerald</p>
+                        <span class="book-availability available">Available</span>
+                        <button class="btn">Borrow</button>
+                    </div>
+                    
+                    <!-- Book 2 -->
+                    <div class="book-card">
+                        <h3 class="book-title">To Kill a Mockingbird</h3>
+                        <p class="book-author">Harper Lee</p>
+                        <span class="book-availability available">Available</span>
+                        <button class="btn">Borrow</button>
+                    </div>
+                    
+                    <!-- Book 3 -->
+                    <div class="book-card">
+                        <h3 class="book-title">1984</h3>
+                        <p class="book-author">George Orwell</p>
+                        <span class="book-availability unavailable">Checked Out</span>
+                        <button class="btn" disabled>Borrow</button>
+                    </div>
+                    
+                    <!-- Book 4 -->
+                    <div class="book-card">
+                        <h3 class="book-title">Pride and Prejudice</h3>
+                        <p class="book-author">Jane Austen</p>
+                        <span class="book-availability available">Available</span>
+                        <button class="btn">Borrow</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="borrowed-books">
+                <h2>My Borrowed Books</h2>
+                <ul class="borrowed-list">
+                    <!-- Borrowed Book 1 -->
+                    <li class="borrowed-item">
+                        <div>
+                            <h3>Moby Dick</h3>
+                            <p>Herman Melville</p>
+                            <p>Due back: May 15, 2025</p>
+                        </div>
+                        <button class="return-btn">Return</button>
+                    </li>
+                    
+                    <!-- Borrowed Book 2 -->
+                    <li class="borrowed-item">
+                        <div>
+                            <h3>The Catcher in the Rye</h3>
+                            <p>J.D. Salinger</p>
+                            <p>Due back: May 10, 2025</p>
+                        </div>
+                        <button class="return-btn">Return</button>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

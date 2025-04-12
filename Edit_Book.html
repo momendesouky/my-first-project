@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>admin panel-Edit Book</title>
+  <link rel="stylesheet" href="CSS/Edit_book.css">
+</head>
+<body>
+<h2>Edit Book</h2>
+<form action="/update-book" method="post">
+  <label for="bookID">Book ID:</label>
+  <input type="text" id="bookID" name="bookID" value="101" readonly>
+
+  <label for="bookName">Book Name:</label>
+  <input type="text" id="bookName" name="bookName" value="Clean Code">
+
+  <label for="author">Author:</label>
+  <input type="text" id="author" name="author" value="Robert C. Martin">
+
+  <label for="category">Category:</label>
+  <input type="text" id="category" name="category" value="Programming">
+
+  <label for="description">Description:</label>
+  <textarea id="description" name="description" rows="4">A guide to writing clean, maintainable code</textarea>
+
+  <input type="submit" value="Update Book">
+</form>
+</body>
+</html>

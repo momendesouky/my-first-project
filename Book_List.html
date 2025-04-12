@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Books list</title>
+  <link rel="stylesheet" href="CSS/Book_List.css">
+</head>
+<body>
+<h2>Books List</h2>
+
+<input type="text" id="searchInput" onkeyup="searchBooks()" placeholder="Search for books by name...">
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Book Name</th>
+      <th>Author</th>
+      <th>Category</th>
+      <th>Description</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>101</td>
+      <td>Clean Code</td>
+      <td>Robert C. Martin</td>
+      <td>Programming</td>
+      <td>A guide to writing clean, maintainable code</td>
+      <td>
+        <a class="button" href="view-book.html?id=101">View</a>
+        <a class="button" href="edit-book.html?id=101">Edit</a>
+      </td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>The Alchemist</td>
+      <td>Paulo Coelho</td>
+      <td>Fiction</td>
+      <td>A mystical story about a shepherd's journey</td>
+      <td>
+        <a class="button" href="view-book.html?id=102">View</a>
+        <a class="button" href="edit-book.html?id=102">Edit</a>
+      </td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>Atomic Habits</td>
+      <td>James Clear</td>
+      <td>Self-help</td>
+      <td>Strategies for building good habits and breaking bad ones</td>
+      <td>
+        <a class="button" href="view-book.html?id=103">View</a>
+        <a class="button" href="edit-book.html?id=103">Edit</a>
+      </td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td>Dune</td>
+      <td>Frank Herbert</td>
+      <td>Science Fiction</td>
+      <td>An epic saga of politics and power in a desert world</td>
+      <td>
+        <a class="button" href="view-book.html?id=104">View</a>
+        <a class="button" href="edit-book.html?id=104">Edit</a>
+      </td>
+    </tr>
+    <tr>
+      <td>105</td>
+      <td>Thinking, Fast and Slow</td>
+      <td>Daniel Kahneman</td>
+      <td>Psychology</td>
+      <td>Exploring the two systems that drive the way we think</td>
+      <td>
+        <a class="button" href="view-book.html?id=105">View</a>
+        <a class="button" href="edit-book.html?id=105">Edit</a>
+      </td>
+    </tr>
+    <tr>
+      <td>106</td>
+      <td>The Martian</td>
+      <td>Andy Weir</td>
+      <td>Science Fiction</td>
+      <td>An astronaut's struggle to survive on Mars</td>
+      <td>
+        <a class="button" href="view-book.html?id=106">View</a>
+        <a class="button" href="edit-book.html?id=106">Edit</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
